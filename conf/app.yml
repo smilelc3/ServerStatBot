@@ -1,0 +1,15 @@
+# webhook url
+DINGTALK_WEBHOOK_URL: "fill your dingtalk webhook url"
+# mysql url
+SQLALCHEMY_DATABASE_URI: "mysql+pymysql://root:123456@localhost:3306/test?charset=UTF8MB4"
+# time(min) to how frequency to refresh
+CYCLE_FETCH_TIME_MIN: 10
+#  Destination web list
+DES_WEB_LIST:
+  - "http://localhost:8000/health"
+  - "http://localhost:8001/health"
+  - "http://localhost:8002/health"
+# if bot at all users
+DINGTALK_AT_ALL: false
+# dingtalk msg title
+DINGTALK_TITLE: "服务器健康报警"

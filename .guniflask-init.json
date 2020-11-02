@@ -1,0 +1,6 @@
+{
+  "authentication_type": null,
+  "cli_version": "0.9.2",
+  "port": 8000,
+  "project_name": "server_stat_bot"
+}
