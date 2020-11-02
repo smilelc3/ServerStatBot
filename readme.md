@@ -26,8 +26,8 @@
 * mysql表配置见下
 
 ## mysql配置
-每一次信息
-mysql的表结构如图，若修改后需要执行```sh bin/manage table2model```
+每一次获取的信息都会存入mysql数据库。
+mysql的表结构如下，若修改表结构后需要执行```sh bin/manage table2model```
 ```sql
 create table record_history
 (
