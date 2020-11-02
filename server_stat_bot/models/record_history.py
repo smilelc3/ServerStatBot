@@ -18,3 +18,4 @@ class RecordHistory(BaseModelMixin, db.Model):
     remark = db.Column(VARCHAR(512))
     dingtalk_resp_stat_code = db.Column('dingtalkRespStatCode', VARCHAR(10), nullable=False)
     dingtalk_resp_text = db.Column('dingtalkRespText', VARCHAR(1024), nullable=False)
+
