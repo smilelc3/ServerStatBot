@@ -24,6 +24,9 @@
 | DINGTALK_AT_ALL| 是否在钉钉消息中，at所有人（true/false） | false |
 | DINGTALK_TITLE| 钉钉消息的标题 | "服务器健康报警" |
 
+运行成功后，可访问[http://127.0.0.1:8000/settings/](http://127.0.0.1:8000/settings/) 获取参数配置json
+![](tests/example.png)
+
 * mysql表配置见下
 
 ## mysql配置
