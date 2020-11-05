@@ -10,15 +10,16 @@
 ## 项目依赖
 本项目基于`guniflask`创建，相关依赖
 见[requirements/app.txt](requirements/app.txt)文件
+[gunicorn手册](https://docs.gunicorn.org/en/stable/settings.html)
 
 ## 参数配置
-参数文件位于`conf/app.yml`文件中，功能如下：
+参数文件位于`conf/app.yml`文件和`server_stat_bot/config/security_config.py`文件中，功能如下：
 
 | 参数 | 注释 | 样例 |
 | :----: | :----: | :----: |
 | DINGTALK_WEBHOOK_URL|钉钉机器人的webhook地址|  "https://oapi.dingtalk.com/robot/send?access_token=7e1c56b0r2dtc9ze9ct4553fe1490067be780476e4fz45v061c3dz3e079f8e"|
 | SQLALCHEMY_DATABASE_URI|mysql(pymysql驱动)的url|  "mysql+pymysql://root:123456@localhost:3306/test?charset=UTF8MB4"|
-| CYCLE_FETCH_TIME_MIN|多少分钟为周期访问特定服务器，获取健康状态（推荐5/10 min）| 10|
+| FETCH_TIME_MIN_PLAN|多少分钟为计划周期访问特定服务器，获取健康状态| 5 |
 | DES_WEB_LIST|目标服务器地址，格式为yaml List,一行一个 | - "http://localhost:8000/health" |
 | DINGTALK_AT_ALL| 是否在钉钉消息中，at所有人（true/false） | false |
 | DINGTALK_TITLE| 钉钉消息的标题 | "服务器健康报警" |
